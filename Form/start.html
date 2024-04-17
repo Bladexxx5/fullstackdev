@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Registration Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      input[type="checkbox"] {
+        width: auto;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Registration Form</h2>
+    <form action="/submit_registration" method="post">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name and Lastname:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="free">Free Plan</option>
+          <option value="basic">Basic Plan (€8/month)</option>
+          <option value="standard">Standard Plan (€16/month)</option>
+          <option value="premium">Premium Plan (€24/month)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="pro_plan" name="pro_plan">
+          Pro Plan (€40/month)
+        </label>
+      </div>
+      <hr>
+      <h3>Payment Information</h3>
+      <div class="form-group">
+        <label for="credit_card">Credit Card Number:</label>
+        <input type="text" id="credit_card" name="credit_card" required>
+      </div>
+      <div class="form-group">
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" required>
+      </div>
+      <div class="form-group">
+        <label for="expiration">Expiration Date:</label>
+        <input type="text" id="expiration" name="expiration" placeholder="MM/YYYY" required>
+      </div>
+      <hr>
+      <h3>Billing Address</h3>
+      <div class="form-group">
+        <label for="address">Billing Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
