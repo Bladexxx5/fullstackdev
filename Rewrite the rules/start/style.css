@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #000000;
+    --ball-size: 500px;
+  }
+  
+  body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+  }
+  
+  .ball {
+    width: var(--ball-size);
+    height: var(--ball-size);
+    background-color: red;
+    border-radius: 50%;
+  }
+  
