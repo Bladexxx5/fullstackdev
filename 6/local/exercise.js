@@ -1,4 +1,3 @@
-// exercise.js
 
 const user = {
   id: 1,
