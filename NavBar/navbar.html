@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+</head>
+<body>
+
+<nav style="background-color: #333; display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+    <a href="#" style="color: white; text-decoration: none;">Navbar</a>
+    <div style="display: flex; align-items: center;">
+        <a href="#" style="color: white; text-decoration: none; margin-right: 20px;">Home</a>
+        <a href="#" style="color: white; text-decoration: none; margin-right: 20px;">Link</a>
+        <div style="position: relative;">
+            <a href="#" class="dropdown" style="color: white; text-decoration: none; margin-right: 20px;">Dropdown &#9662;</a>
+            <div class="dropdown-content" style="display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
+                <a href="#" style="color: black; text-decoration: none; display: block; padding: 10px;">Option 1</a>
+                <a href="#" style="color: black; text-decoration: none; display: block; padding: 10px;">Option 2</a>
+            </div>
+        </div>
+        <a href="#" class="disabled" style="color: #666666; text-decoration: none; margin-right: 20px;">Disabled</a>
+    </div>
+    <div>
+        <input type="text" placeholder="Search..." style="padding: 6px; font-size: 17px; border: none; width: 130px;">
+        <button type="submit" style="padding: 6px 10px; background: #4CAF50; font-size: 17px; border: none; cursor: pointer;">Search</button>
+    </div>
+</nav>
+
+</body>
+</html>

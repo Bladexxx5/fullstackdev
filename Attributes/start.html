@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Start Page</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      input[type="checkbox"] {
+        width: auto;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Start Page</h2>
+    
+    <h3>Additions:</h3>
+    
+    <div class="form-group">
+      <label for="disabledButton">Disabled Button:</label>
+      <button id="disabledButton" disabled>Disabled Button</button>
+    </div>
+
+    <div class="form-group">
+      <label for="rangeInput">Range Input (0-100, double step):</label>
+      <input type="number" id="rangeInput" name="rangeInput" min="0" max="100" step="2" value="0" autofocus>
+    </div>
+
+    <div class="form-group">
+      <label>
+        <input type="checkbox" id="checkBox" name="checkBox" checked>
+        Checkbox (Selected)
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="dateInput">Date Input:</label>
+      <input type="date" id="dateInput" name="dateInput">
+    </div>
+
+    <script>
+      // JavaScript can be added here for interactivity
+    </script>
+  </body>
+</html>
